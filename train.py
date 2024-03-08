@@ -17,6 +17,8 @@ from optimizer import ScheduledOptim
 import hparams as hp
 import utils
 
+# restore_step: 25
+# python train.py --restore_step 25
 
 def main(args):
     # Get device
