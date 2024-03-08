@@ -119,16 +119,16 @@ def main(args):
                 m_p_l = mel_postnet_loss.item()
                 d_l = duration_loss.item()
 
-                with open(os.path.join("logger", "total_loss.txt"), "a") as f_total_loss:
+                with open(os.path.join("/content/fastspeech1", "logger", "total_loss.txt"), "a") as f_total_loss:
                     f_total_loss.write(str(t_l)+"\n")
 
-                with open(os.path.join("logger", "mel_loss.txt"), "a") as f_mel_loss:
+                with open(os.path.join("/content/fastspeech1", "logger", "mel_loss.txt"), "a") as f_mel_loss:
                     f_mel_loss.write(str(m_l)+"\n")
 
-                with open(os.path.join("logger", "mel_postnet_loss.txt"), "a") as f_mel_postnet_loss:
+                with open(os.path.join("/content/fastspeech1", "logger", "mel_postnet_loss.txt"), "a") as f_mel_postnet_loss:
                     f_mel_postnet_loss.write(str(m_p_l)+"\n")
 
-                with open(os.path.join("logger", "duration_loss.txt"), "a") as f_d_loss:
+                with open(os.path.join("/content/fastspeech1", "logger", "duration_loss.txt"), "a") as f_d_loss:
                     f_d_loss.write(str(d_l)+"\n")
 
                 # Backward
@@ -163,7 +163,7 @@ def main(args):
                     print(str3)
                     print(str4)
 
-                    with open(os.path.join("logger", "logger.txt"), "a") as f_logger:
+                    with open(os.path.join("/content/fastspeech1", "logger", "logger.txt"), "a") as f_logger:
                         f_logger.write(str1 + "\n")
                         f_logger.write(str2 + "\n")
                         f_logger.write(str3 + "\n")

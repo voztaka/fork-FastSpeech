@@ -20,7 +20,8 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 def get_data_to_buffer():
     buffer = list()
-    text = process_text(os.path.join("data", "train.txt"))
+    # text = process_text(os.path.join("data", "train.txt"))
+    text = process_text(os.path.join("/content", "fastspeech1", "data", "train.txt"))
 
     start = time.perf_counter()
     for i in tqdm(range(len(text))):

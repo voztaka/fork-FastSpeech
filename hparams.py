@@ -24,10 +24,10 @@ duration_predictor_kernel_size = 3
 dropout = 0.1
 
 # Train
-checkpoint_path = "./model_new"
-logger_path = "./logger"
-mel_ground_truth = "./mels"
-alignment_path = "./alignments"
+checkpoint_path = "/content/fastspeech1/model_new"
+logger_path = "/content/fastspeech1/logger"
+mel_ground_truth = "/content/fastspeech1/mels"
+alignment_path = "/content/fastspeech1/alignments"
 
 batch_size = 32
 epochs = 2000
